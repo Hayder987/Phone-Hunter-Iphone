@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Phone Hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -57,6 +58,22 @@
         </div>
        </section>
     </main>
+
+    <!-- modal -->
+     <!-- Open the modal using ID.showModal() method -->
+<dialog id="modal1" class="modal modal-middle sm:modal-middle">
+  <div class="modal-box">
+    <div id="modalDetails" class="">
+
+    </div>
+    <div class="modal-action" >
+      <form method="dialog " class="w-full">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn w-full bg-blue-200">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
 
     <script src="js/app.js"></script>
